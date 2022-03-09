@@ -1,8 +1,23 @@
 <?php
 // -----
 // Part of the Bootstrap 4 Template Home-Page Carousel by lat9.
-// Copyright (C) 2021, Vinos de Frutas Tropicales.
+// Copyright (C) 2021-2022, Vinos de Frutas Tropicales.
 //
+// -----
+// Zen Cart's 'base' banner management requires that a 'banners_history' record be present for a 'banner' if that banner is
+// to be expired.  Add a dummy record for any slider banners that don't already have such a record.
+//
+$slider_banner_check = $db->Execute(
+    "SELECT b.banners_id
+       FROM " . TABLE_BANNERS . " b
+      WHERE b.banners_group = '" . HOME_SLIDER_BANNER_GROUP . "'
+        AND b.banners_id NOT IN (SELECT bh.banners_id FROM " . TABLE_BANNERS_HISTORY . " bh)"
+);
+foreach ($slider_banner_check as $banner_history) {
+    $banner_history['banners_history_date'] = 'now()';
+    zen_db_perform(TABLE_BANNERS_HISTORY, $banner_history);
+}
+
 // -----
 // The 'pseudo-configuration' settings can be found in /includes/extra_datafiles/bs4_home_slider.php.
 //
