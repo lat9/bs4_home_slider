@@ -10,7 +10,7 @@
 $slider_banner_check = $db->Execute(
     "SELECT b.banners_id
        FROM " . TABLE_BANNERS . " b
-      WHERE b.banners_group = '" . HOME_SLIDER_BANNER_GROUP . "'
+      WHERE b.banners_group = '" . BS4_SLIDER_BANNER_GROUP . "'
         AND b.banners_id NOT IN (SELECT bh.banners_id FROM " . TABLE_BANNERS_HISTORY . " bh)"
 );
 foreach ($slider_banner_check as $banner_history) {
