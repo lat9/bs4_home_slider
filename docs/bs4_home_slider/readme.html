@@ -69,18 +69,18 @@ img {
 
 <body>
     <h1>Bootstrap-4 Template, Home-Page Slider for Zen Cart v1.5.7 and v1.5.8</h1>
-    <h3>Version 1.0.2, by lat9</h3>
+    <h3>Version 1.1.0, by lat9</h3>
     <p>Current Support Thread at Zen Cart Forums: <a href="https://www.zen-cart.com/showthread.php?223910-ZCA-Bootstrap-4-Template-Support-Thread" target="_blank">https://www.zen-cart.com/showthread.php?223910-ZCA-Bootstrap-4-Template-Support-Thread</a></p>
     <p>GitHub repository: <a href="https://github.com/lat9/bs4_home_slider" target="_blank">https://github.com/lat9/bs4_home_slider</a>.</p>
 
     <h2>What it does</h2>
-    <p>This sub-template provides a home-page slider (a.k.a. carousel) for the <em>ZCA Bootstrap 4</em>, v3.1.0 or later, template.  You configure its output using Zen Cart's built-in <b>Banner Manager</b> and the 'pseudo-configuration' settings present in <code>/includes/extra_datafiles/bs4_home_slider.php</code>.</p>
+    <p>This sub-template provides a home-page slider (a.k.a. carousel) for the <em>ZCA Bootstrap 4</em>, v3.5.1 or later, template.  You configure its output using Zen Cart's built-in <b>Banner Manager</b> and the 'pseudo-configuration' settings present in <code>/includes/extra_datafiles/bs4_home_slider.php</code>.</p>
     
     <h2>Files List</h2>
     <p>The following files are provided in the sub-template's distribution:</p>
     <ol>
         <li>/includes/extra_datafiles/bs4_home_slider.php</li>
-        <li>/includes/languages/english/extra_definitions/bootstrap/bs4_home_slider_definitions.php</li>
+        <li><span class="removed">/includes/languages/english/extra_definitions/bootstrap/bs4_home_slider_definitions.php</span> <span class="smaller">(Removed in v1.1.0)</span></li>
         <li>/includes/templates/bootstrap/templates/tpl_index_categories.php, contains one change-section.</li>
         <li>/includes/templates/bootstrap/templates/tpl_index_default.php, contains one change-section.</li>
         <li>/includes/templates/bootstrap/templates/tpl_index_slider.php</li>
@@ -89,7 +89,7 @@ img {
     <h2>Installation</h2>
     <p>This plugin provides a <em>Bootstrap 4</em> styled slider for your Zen Cart's home-page.  You should have previously installed:</p>
     <ol>
-        <li>The 'base' <em>ZCA Bootstrap 4</em> template, v3.1.0 or later: https://www.zen-cart.com/downloads.php?do=file&id=2191</li>
+        <li>The 'base' <em>ZCA Bootstrap 4</em> template, v3.5.1 or later: https://www.zen-cart.com/downloads.php?do=file&id=2191</li>
     </ol>
     <p>Once those 'base' files have been installed, you're ready to install the 'sub-template' files.</p>
     <p><b>Note:</b> 
@@ -108,20 +108,23 @@ img {
     <ul>
         <li>v1.1.0, 2023-02-21 (lat9)<ul>
             <li>BUGFIX: Sync 'base' Bootstrap template files with the current template version.</li>
-            <li>The following files were changed added:<ol>
+            <li>BUGFIX: Carousel prev/next and indicators don't display.</li>
+            <li>The following files were changed or <span class="removed">removed</span>:<ol>
+                <li><span class="removed">/includes/languages/english/extra_definitions/bs4_home_slider_definitions.php</span></li>
                 <li>/includes/templates/bootstrap/templates/tpl_index_categories.php</li>
                 <li>/includes/templates/bootstrap/templates/tpl_index_default.php</li>
+                <li>/includes/templates/bootstrap/templates/tpl_index_slider.php</li>
             </ol></li>
         </ul></li>
         <li>v1.0.2, 2022-04-28 (lat9)<ul>
             <li>BUGFIX: Correct the constant used in the v1.0.1 addition.</li>
-            <li>The following files were changed added:<ol>
+            <li>The following files were changed:<ol>
                 <li>/includes/templates/bootstrap/templates/tpl_index_slider.php</li>
             </ol></li>
         </ul></li>
         <li>v1.0.1, 2022-03-09 (lat9)<ul>
             <li>BUGFIX: Add a dummy <code>banners_history</code> record for each slide, so that any expiration will be properly performed.</li>
-            <li>The following files were changed added:<ol>
+            <li>The following files were changed:<ol>
                 <li>/includes/templates/bootstrap/templates/tpl_index_slider.php</li>
             </ol></li>
         </ul></li>

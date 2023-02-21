@@ -9,10 +9,10 @@ This repository is home to the home-page slider/carousel for the Zen Cart [ZCA B
 
 ## Prerequisites
 
-1. Zen Cart version **1.5.7** or later, best when run on a zc157**b** (or later) installation.
+1. Zen Cart version **1.5.7** or later, best when run on a zc158 (or later) installation.
    - For Zen Cart 1.5.7 (no suffix) and 1.5.7a, be sure to apply all the [Known Bugs and Fixes](https://www.zen-cart.com/showthread.php?226872-Known-bugs-(and-fixes)-for-v1-5-7-series) for the template's proper operation.
-2. [ZCA Bootstrap 4 Template]( https://www.zen-cart.com/downloads.php?do=file&id=2191), v3.1.0 or later, previously installed.
+2. [ZCA Bootstrap 4 Template]( https://www.zen-cart.com/downloads.php?do=file&id=2191), v3.5.1 or later, previously installed.
 
 ## Configuration
 
-To keep the size of the slider's zip-file to a minimum, the documentation of its configuration requirements are hosted [here](./pages/configuration.md) in its GitHub repository.
+To keep the size of the slider's zip-file to a minimum, the documentation of its configuration requirements are hosted [here](https://github.com/lat9/bs4_home_slider/wiki/Home-Page-Slider-Configuration) in its GitHub repository.

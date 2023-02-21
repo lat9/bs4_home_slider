@@ -1,7 +1,9 @@
 <?php
 // -----
 // Part of the Bootstrap 4 Template Home-Page Carousel by lat9.
-// Copyright (C) 2021-2022, Vinos de Frutas Tropicales.
+// Copyright (C) 2021-2023, Vinos de Frutas Tropicales.
+//
+// Last updated: Bootstrap Carousel v1.1.0
 //
 // -----
 // Zen Cart's 'base' banner management requires that a 'banners_history' record be present for a 'banner' if that banner is
@@ -31,7 +33,7 @@ $bs4_hp_banners = $db->Execute(
 
 if (!$bs4_hp_banners->EOF) {
 ?>
-<div id="carouselHomeSlider" class="carousel slide" data-ride="carousel" data-interval="5000">
+<div id="carouselHomeSlider" class="carousel banner-carousel slide" data-ride="carousel" data-interval="5000">
     <ol class="carousel-indicators">
 <?php
     for ($i = 0, $n = count($bs4_hp_banners), $hp_class = ' class="active"'; $i < $n; $i++) {
@@ -56,13 +58,13 @@ if (!$bs4_hp_banners->EOF) {
     } 
 ?>
     </div>
-    <a class="carousel-control-prev" href="#carouselHomeSlider" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only"><?php echo BS4_PREVIOUS; ?></span>
+    <a class="carousel-control-prev" href="#carouselHomeSlider>" role="button" data-slide="prev">
+        <span><i class="fa fa-lg fa-chevron-left" aria-hidden="true"></i></span>
+        <span class="sr-only"><?php echo BUTTON_PREVIOUS_ALT; ?></span>
     </a>
     <a class="carousel-control-next" href="#carouselHomeSlider" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only"><?php echo BS4_NEXT; ?></span>
+        <span><i class="fa fa-lg fa-chevron-right" aria-hidden="true"></i></span>
+        <span class="sr-only"><?php echo BUTTON_NEXT_ALT; ?></span>
     </a>
 </div>
 <div class="pb-2"></div>
