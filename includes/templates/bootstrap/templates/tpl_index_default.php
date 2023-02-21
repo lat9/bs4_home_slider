@@ -2,7 +2,7 @@
 /**
  * Page Template
  * 
- * BOOTSTRAP v3.0.0
+ * BOOTSTRAP v3.5.2
  * BOOTSTRAP HOMEPAGE SLIDER v1.0.0
  *
  * Main index page<br />
@@ -16,11 +16,10 @@
  */
 ?>
 <div id="indexDefault" class="centerColumn">
-
 <h1 id="indexDefault-pageHeading" class="pageHeading"><?php echo HEADING_TITLE; ?></h1>
 
 <?php if (SHOW_CUSTOMER_GREETING == 1) { ?>
-<h3 id="indexDefault-greeting" class="greeting"><?php echo zen_customer_greeting(); ?></h3>
+<h2 id="indexDefault-greeting" class="greeting"><?php echo zen_customer_greeting(); ?></h2>
 <?php } ?>
 
 <?php
