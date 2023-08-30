@@ -55,10 +55,10 @@ if (!$bs4_hp_banners->EOF) {
         </div>
 <?php
         $hp_class = '';
-    } 
+    }
 ?>
     </div>
-    <a class="carousel-control-prev" href="#carouselHomeSlider>" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselHomeSlider" role="button" data-slide="prev">
         <span><i class="fa fa-lg fa-chevron-left" aria-hidden="true"></i></span>
         <span class="sr-only"><?php echo BUTTON_PREVIOUS_ALT; ?></span>
     </a>
